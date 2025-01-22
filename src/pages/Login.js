@@ -28,7 +28,7 @@ const Login = () => {
       const isAllowed = await checkUserAccess(result.user.email);
 
       if (isAllowed) {
-        console.log("User signed in:", result.user);
+        console.log("User signed in");
         navigate("/landing"); // Redirect to the landing page
       } else {
         console.log("User not authorized");
